@@ -50,7 +50,7 @@ const hh = humanHash('7528880a986c40e78c38115e640da2a1')
 
 console.log(hh)
 
-> 'sweet artist alanine cat'
+// > 'sweet artist alanine cat'
 ```
 
 ### Node
@@ -62,7 +62,7 @@ const hh = humanHash('7528880a986c40e78c38115e640da2a1')
 
 console.log(hh)
 
-> 'sweet artist alanine cat'
+// > 'sweet artist alanine cat'
 ```
 
 ### Advanced usage
@@ -76,7 +76,7 @@ Alter the default parameters to suit your use-case
 
 const customWordListArray = [ 'bring', 'your', 'own', 'words' ]
 
-const customHumanHash = (inputString) => humanHash(inputString, 4, ' ', customWordListArray)
+const customHumanHash = (inputString) =// > humanHash(inputString, 4, ' ', customWordListArray)
 
 const hh = customHumanHash('7528880a986c40e78c38115e640da2a1')
 
@@ -87,13 +87,13 @@ const hh = customHumanHash('7528880a986c40e78c38115e640da2a1')
 ```JS
 // ...
 
-const customHumanHash = (inputString) => humanHash(inputString, 4, '-')
+const customHumanHash = (inputString) =// > humanHash(inputString, 4, '-')
 
 const hh = customHumanHash('7528880a986c40e78c38115e640da2a1')
 
 console.log(hh)
 
-> 'sweet-artist-alanine-cat'
+// > 'sweet-artist-alanine-cat'
 
 ```
 
@@ -104,13 +104,13 @@ console.log(hh)
 
 const customOutputLength = 6
 
-const customHumanHash = (inputString) => humanHash(inputString, customOutputLength)
+const customHumanHash = (inputString) =// > humanHash(inputString, customOutputLength)
 
 const hh = customHumanHash('7528880a986c40e78c38115e640da2a1')
 
 console.log(hh)
 
-> 'autumn edward illinois eleven delta hawaii'
+// > 'autumn edward illinois eleven delta hawaii'
 
 ```
 
