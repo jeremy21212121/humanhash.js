@@ -15,8 +15,8 @@ const DEFAULT_WORDLIST = require('./lib/data/defaultWordList.js')
 
 /**
  * 
- * Makes a high-entropy string more memorable for humans.
- *  @param  {String} inputString - High-entropy string, like a hash or UUID.
+ * Makes a high-entropy string more readable and memorable for humans.
+ *  @param  {String} inputString - High-entropy string, like a hash digest or UUID.
  *  @param  {Number} [outputLength=4] - Number of bytes of entropy (and words) to use for output.
  *  @param  {String} [separator=''] - Word separator eg. '-', ' ', '_'
  *  @param  {Array[String]} [wordArray=DEFAULT_WORDLIST] - Array of words used to generate output.
