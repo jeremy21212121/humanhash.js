@@ -22,7 +22,7 @@ This library has a simpler API than [it's namesake](https://github.com/zacharyvo
 
 The following is the function signature in JSDoc format:
 
-```
+```JS
 /**
  * Makes a high-entropy string more readable and memorable for humans.
  *  @param  {String} inputString - High-entropy string, like a hash digest or UUID.
@@ -35,7 +35,7 @@ The following is the function signature in JSDoc format:
 
 ## Installation
 
-```
+```JS
 npm install humanhash.js
 ```
 
@@ -43,7 +43,7 @@ npm install humanhash.js
 
 ### Browser
 
-```
+```JS
 import { humanHash } from 'humanhash.js'
 
 const hh = humanHash('7528880a986c40e78c38115e640da2a1')
@@ -55,7 +55,7 @@ console.log(hh)
 
 ### Node
 
-```
+```JS
 const { humanHash } = require('humanhash.js')
 
 const hh = humanHash('7528880a986c40e78c38115e640da2a1')
@@ -71,7 +71,7 @@ Alter the default parameters to suit your use-case
 
 #### Supply your own word list
 
-```
+```JS
 // ...
 
 const customWordListArray = [ 'bring', 'your', 'own', 'words' ]
@@ -84,7 +84,7 @@ const hh = customHumanHash('7528880a986c40e78c38115e640da2a1')
 
 ### Use dashes instead of spaces as the word separator
 
-```
+```JS
 // ...
 
 const customHumanHash = (inputString) => humanHash(inputString, 4, '-')
@@ -99,7 +99,7 @@ console.log(hh)
 
 #### Increase output word length
 
-```
+```JS
 // ...
 
 const customOutputLength = 6
@@ -114,10 +114,3 @@ console.log(hh)
 
 ```
 
- * Makes random strings human-readable by lossily compressing them and mapping to English words.
- * 
- * It takes a high-entropy string like a hash or UUID, reduces the entropy through lossy compression and maps the resulting values to words.
- * 
- * These human-readable hashes are intended to be used for display purposes. Since they significantly reduce the entropy of the input, they should not be used as an index or for any other purpose that requires high entropy.
- * 
- * Ported from HumanHash.py (https://github.com/zacharyvoase/humanhash)
