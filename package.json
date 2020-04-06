@@ -1,0 +1,14 @@
+{
+  "name": "humanhash.js",
+  "version": "1.0.0",
+  "description": "Convert hashes or UUIDs to human readable words. Inspired by humanhash.py.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Jeremy Poole",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^7.1.1"
+  }
+}
